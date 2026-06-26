@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="it" data-lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Massimo Caliman — Software Architect</title>
+  <meta name="description"
+    content="Massimo Caliman — Software Architect con oltre 28 anni di esperienza in sviluppo enterprise Java, architetture software e leadership tecnica. Genova, Italia.">
+  <meta name="keywords" content="Software Architect, Java, CTO, Genova, Enterprise, Developer">
+  <meta name="author" content="Massimo Caliman">
+  <meta property="og:title" content="Massimo Caliman — Software Architect">
+  <meta property="og:description" content="Software Architect con oltre 28 anni di esperienza enterprise.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://massimocaliman.github.io">
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚡</text></svg>">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+  <!-- ====== NAVIGATION ====== -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#" class="nav-logo"><span class="accent">&lt;</span>MC<span class="accent">/&gt;</span></a>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#about">
+          <span class="lang-it">Chi Sono</span>
+          <span class="lang-en">About</span>
+        </a>
+        <a href="#experience">
+          <span class="lang-it">Esperienza</span>
+          <span class="lang-en">Experience</span>
+        </a>
+        <a href="#skills">
+          <span class="lang-it">Competenze</span>
+          <span class="lang-en">Skills</span>
+        </a>
+        <a href="#certifications">
+          <span class="lang-it">Certificazioni</span>
+          <span class="lang-en">Certifications</span>
+        </a>
+        <a href="#talks">
+          <span class="lang-it">Talks</span>
+          <span class="lang-en">Talks</span>
+        </a>
+        <a href="#education">
+          <span class="lang-it">Formazione</span>
+          <span class="lang-en">Education</span>
+        </a>
+      </div>
+
+      <div style="display:flex;align-items:center;gap:0.75rem;">
+        <div class="lang-switch" role="group" aria-label="Language selector">
+          <button class="lang-btn active" id="lang-it" aria-label="Italiano">IT</button>
+          <button class="lang-btn" id="lang-en" aria-label="English">EN</button>
+        </div>
+        <button class="mobile-toggle" id="mobile-toggle" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- ====== HERO ====== -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-content">
+      <div class="avatar-monogram">MC</div>
+      <p class="hero-greeting">
+        <span class="lang-it">Ciao, mi chiamo</span>
+        <span class="lang-en">Hello, I'm</span>
+      </p>
+      <h1 class="hero-name">Massimo Caliman</h1>
+      <div class="hero-typing-wrapper">
+        <span class="lang-it">Sono </span>
+        <span class="lang-en">I'm a </span>
+        <span class="typed-text" id="typed-text"></span>
+      </div>
+      <p class="hero-location">
+        <span class="dot"></span>
+        Genova, Italia
+      </p>
+      <div class="hero-cta">
+        <a href="https://www.linkedin.com/in/mcaliman" target="_blank" rel="noopener" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+          </svg>
+          LinkedIn
+        </a>
+        <a href="https://github.com/mcaliman" target="_blank" rel="noopener" class="btn btn-outline">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor">
+            <path
+              d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+          </svg>
+          GitHub
+        </a>
+      </div>
+    </div>
+    <div class="scroll-indicator">
+      <span class="lang-it">Scorri</span>
+      <span class="lang-en">Scroll</span>
+      <span class="arrow"></span>
+    </div>
+  </section>
+
+  <!-- ====== ABOUT ====== -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">
+          <span class="lang-it">Chi Sono</span>
+          <span class="lang-en">About Me</span>
+        </span>
+        <h2 class="section-title">
+          <span class="lang-it">Architetto Software &amp; Leader Tecnico</span>
+          <span class="lang-en">Software Architect &amp; Technical Leader</span>
+        </h2>
+        <hr class="section-divider">
+      </div>
+
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="lang-it">
+            <strong>Sviluppatore Software e Business Analyst dal 1997.</strong>
+            Esperienza consolidata come CTO, developer e analista per compagnie assicurative, broker, società
+            finanziarie e aziende private. Oltre 28 anni di esperienza enterprise nello sviluppo di progetti ERP, CMS e
+            LMS.
+          </p>
+          <p class="lang-en">
+            <strong>Software Developer and Business Analyst since 1997.</strong>
+            Solid experience as CTO, developer and analyst for insurance companies, insurance brokers, finance companies
+            and private companies. Over 28 years of enterprise experience in ERP, CMS and LMS project development.
+          </p>
+          <p class="lang-it">
+            CoFounder del <strong>Java User Group Genova</strong>, membro del <strong>Google Developers Group
+              Genova</strong> e dell'<strong>AICA</strong>. Appassionato di architetture software, programmazione
+            funzionale, blockchain e tecnologie emergenti.
+          </p>
+          <p class="lang-en">
+            CoFounder of the <strong>Java User Group Genova</strong>, member of the <strong>Google Developers Group
+              Genova</strong> and <strong>AICA</strong>. Passionate about software architectures, functional
+            programming, blockchain and emerging technologies.
+          </p>
+          <div class="about-links">
+            <a href="https://trueprogramming.com" target="_blank" rel="noopener" class="about-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+              </svg>
+              Blog
+            </a>
+            <a href="https://juggenova.it" target="_blank" rel="noopener" class="about-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+                <circle cx="9" cy="7" r="4" />
+                <path d="M23 21v-2a4 4 0 00-3-3.87m-4-12a4 4 0 010 7.75" />
+              </svg>
+              JUG Genova
+            </a>
+            <a href="https://x.com/massimocaliman" target="_blank" rel="noopener" class="about-link">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
+                <path
+                  d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+              </svg>
+              X
+            </a>
+          </div>
+        </div>
+        <div class="about-stats reveal">
+          <div class="stats-grid">
+            <div class="stat-card">
+              <div class="stat-number">28+</div>
+              <div class="stat-label">
+                <span class="lang-it">Anni di esperienza</span>
+                <span class="lang-en">Years of experience</span>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">14</div>
+              <div class="stat-label">
+                <span class="lang-it">Ruoli ricoperti</span>
+                <span class="lang-en">Roles held</span>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">24</div>
+              <div class="stat-label">
+                <span class="lang-it">Certificazioni</span>
+                <span class="lang-en">Certifications</span>
+              </div>
+            </div>
+            <div class="stat-card">
+              <div class="stat-number">6+</div>
+              <div class="stat-label">
+                <span class="lang-it">Talks &amp; articoli</span>
+                <span class="lang-en">Talks &amp; articles</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== EXPERIENCE ====== -->
+  <section class="section" id="experience">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">
+          <span class="lang-it">Carriera</span>
+          <span class="lang-en">Career</span>
+        </span>
+        <h2 class="section-title">
+          <span class="lang-it">Esperienza Professionale</span>
+          <span class="lang-en">Professional Experience</span>
+        </h2>
+        <hr class="section-divider">
+      </div>
+
+      <div class="timeline reveal">
+
+        <!-- 1. Aon Italia -->
+        <div class="timeline-item current">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">
+              <span class="lang-it">Dic 2025 — Presente</span>
+              <span class="lang-en">Dec 2025 — Present</span>
+            </span>
+            <h3 class="timeline-role">Software Architect</h3>
+            <h4 class="timeline-company">Aon Italia</h4>
+          </div>
+        </div>
+
+        <!-- 2. Methis Lab -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">
+              <span class="lang-it">Gen 2018 — Nov 2025</span>
+              <span class="lang-en">Jan 2018 — Nov 2025</span>
+            </span>
+            <h3 class="timeline-role">Chief Technology Officer &amp; Software Architect</h3>
+            <h4 class="timeline-company">Methis Lab S.p.A. (Gruppo AON)</h4>
+          </div>
+        </div>
+
+        <!-- 3. BDA Euro Brokers -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">
+              <span class="lang-it">Giu 2017 — Dic 2017</span>
+              <span class="lang-en">Jun 2017 — Dec 2017</span>
+            </span>
+            <h3 class="timeline-role">Software Development Manager</h3>
+            <h4 class="timeline-company">BDA Euro Brokers s.r.l</h4>
+            <p class="timeline-desc lang-it">Progettazione e implementazione di portali B2B dedicati al mercato
+              assicurativo per un broker di assicurazioni.</p>
+            <p class="timeline-desc lang-en">Designing and implementing B2B portals dedicated to the insurance market
+              for an insurance broker.</p>
+            <div class="timeline-techs">
+              <span class="tech-tag">Java 8 EE</span>
+              <span class="tech-tag">JSF 2.0</span>
+              <span class="tech-tag">EJB</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Glassfish</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 4. Sentosa -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">
+              <span class="lang-it">Feb 2012 — Mag 2017</span>
+              <span class="lang-en">Feb 2012 — May 2017</span>
+            </span>
+            <h3 class="timeline-role">Chief Technical Officer &amp; Software Architect</h3>
+            <h4 class="timeline-company">Sentosa s.r.l.</h4>
+            <p class="timeline-desc lang-it">CTO per una società di consulenza IT e finanziaria, specializzata in
+              programmi di cessione del quinto e sviluppo di applicazioni enterprise Java per il settore assicurativo.
+            </p>
+            <p class="timeline-desc lang-en">CTO for a company leading in IT and financial consultancy services, mainly
+              experienced in employee loan programs and Java Enterprise application development for insurance.</p>
+            <div class="timeline-techs">
+              <span class="tech-tag">Java EE</span>
+              <span class="tech-tag">JSF</span>
+              <span class="tech-tag">EJB</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Glassfish</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 5. Arax -->
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">
+              <span class="lang-it">Gen 2011 — Gen 2012</span>
+              <span class="lang-en">Jan 2011 — Jan 2012</span>
+            </span>
+            <h3 class="timeline-role">Software Architect &amp; Developer</h3>
+            <h4 class="timeline-company">Arax s.r.l</h4>
+            <p class="timeline-desc lang-it">Progettazione e sviluppo di soluzioni per il settore assicurativo e
+              finanziario tramite C#, Java e PHP.</p>
+            <p class="timeline-desc lang-en">Solution design and development for insurance and finance sectors using C#,
+              Java and PHP.</p>
+            <div class="timeline-techs">
+              <span class="tech-tag">C#</span>
+              <span class="tech-tag">Java SE</span>
+              <span class="tech-tag">PHP 5</span>
+              <span class="tech-tag">MySQL</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 6. Stachus — hidden -->
+        <div class="timeline-item hidden-item" style="display:none;">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">
+              <span class="lang-it">Lug 2010 — Set 2010</span>
+              <span class="lang-en">Jul 2010 — Sep 2010</span>
+            </span>
+            <h3 class="timeline-role">Java Software Developer</h3>
+            <h4 class="timeline-company">Stachus s.r.l.</h4>
+            <p class="timeline-desc lang-it">Sviluppo di datawarehouse e presentazione dati web.</p>
+            <p class="timeline-desc lang-en">Datawarehouse development and web data presentation.</p>
+            <div class="timeline-techs">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Jasper Reports</span>
+              <span class="tech-tag">Tomcat</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 7. Britto Servizi — hidden -->
+        <div class="timeline-item hidden-item" style="display:none;">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">
+              <span class="lang-it">Gen 2010 — Mag 2010</span>
+              <span class="lang-en">Jan 2010 — May 2010</span>
+            </span>
+            <h3 class="timeline-role">Project Manager &amp; Software Developer</h3>
+            <h4 class="timeline-company">Britto Servizi s.r.l</h4>
+            <p class="timeline-desc lang-it">Gestione contenuti e digitalizzazione paperless per un broker assicurativo,
+              basata su Microsoft SharePoint 2007.</p>
+            <p class="timeline-desc lang-en">Content management and paperless digitalization for an insurance broker,
+              based on Microsoft SharePoint 2007.</p>
+            <div class="timeline-techs">
+              <span class="tech-tag">SharePoint 2007</span>
+              <span class="tech-tag">Java SE</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 8. Eterbit — hidden -->
+        <div class="timeline-item hidden-item" style="display:none;">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">
+              <span class="lang-it">Mar 2006 — Dic 2009</span>
+              <span class="lang-en">Mar 2006 — Dec 2009</span>
+            </span>
+            <h3 class="timeline-role">Chief Technical Officer &amp; Senior Java Developer</h3>
+            <h4 class="timeline-company">Eterbit S.r.l</h4>
+            <p class="timeline-desc lang-it">Sviluppo CMS ed ERP enterprise. Guida tecnica del team.</p>
+            <p class="timeline-desc lang-en">Enterprise CMS and ERP development. Technical leadership.</p>
+            <div class="timeline-techs">
+              <span class="tech-tag">Java SE/EE</span>
+              <span class="tech-tag">JSP</span>
+              <span class="tech-tag">Servlet</span>
+              <span class="tech-tag">WebSphere</span>
+              <span class="tech-tag">Struts</span>
+              <span class="tech-tag">Tomcat</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 9. Macbit — hidden -->
+        <div class="timeline-item hidden-item" style="display:none;">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">
+              <span class="lang-it">Ott 2005 — Feb 2006</span>
+              <span class="lang-en">Oct 2005 — Feb 2006</span>
+            </span>
+            <h3 class="timeline-role">Senior Java Developer</h3>
+            <h4 class="timeline-company">Macbit S.r.l</h4>
+            <p class="timeline-desc lang-it">Sviluppo CMS ed ERP.</p>
+            <p class="timeline-desc lang-en">CMS and ERP development.</p>
+            <div class="timeline-techs">
+              <span class="tech-tag">Java SE/EE</span>
+              <span class="tech-tag">JSP</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">Tomcat</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 10. Text-e — hidden -->
+        <div class="timeline-item hidden-item" style="display:none;">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">
+              <span class="lang-it">Apr 2003 — Lug 2005</span>
+              <span class="lang-en">Apr 2003 — Jul 2005</span>
+            </span>
+            <h3 class="timeline-role">Team Leader &amp; Senior Java Developer</h3>
+            <h4 class="timeline-company">Text-e S.r.l — Genova</h4>
+            <p class="timeline-desc lang-it">Sviluppo di Web CMS e Workflow Management Systems. Leadership del team
+              server-side.</p>
+            <p class="timeline-desc lang-en">Development of Web CMS and Workflow Management Systems. Server-side team
+              leadership.</p>
+            <div class="timeline-techs">
+              <span class="tech-tag">Java SE/EE</span>
+              <span class="tech-tag">JSP</span>
+              <span class="tech-tag">Servlet</span>
+              <span class="tech-tag">MySQL</span>
+              <span class="tech-tag">SQL Server</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 11. Datasys — hidden -->
+        <div class="timeline-item hidden-item" style="display:none;">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">
+              <span class="lang-it">Apr 2001 — Apr 2003</span>
+              <span class="lang-en">Apr 2001 — Apr 2003</span>
+            </span>
+            <h3 class="timeline-role">Project Manager &amp; Senior Software Developer</h3>
+            <h4 class="timeline-company">Datasys Network (IBM e-Business Partner)</h4>
+            <p class="timeline-desc lang-it">Project Manager e Senior Java Developer, guida di progetti B2B e B2C su
+              piattaforma IBM WebSphere e Lotus Domino.</p>
+            <p class="timeline-desc lang-en">Project Manager and Senior Java Developer, leading B2B and B2C projects on
+              IBM WebSphere and Lotus Domino.</p>
+            <div class="timeline-techs">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">JSP</span>
+              <span class="tech-tag">WebSphere</span>
+              <span class="tech-tag">DB2</span>
+              <span class="tech-tag">Lotus Domino</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 12. Studio Balbi — hidden -->
+        <div class="timeline-item hidden-item" style="display:none;">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">
+              <span class="lang-it">Feb 1999 — Apr 2001</span>
+              <span class="lang-en">Feb 1999 — Apr 2001</span>
+            </span>
+            <h3 class="timeline-role">Java Developer</h3>
+            <h4 class="timeline-company">Studio Balbi S.u.r.l (Zucchetti) — Genova</h4>
+            <p class="timeline-desc lang-it">Sviluppo di applicazioni Java per HR, gestione presenze e buste paga,
+              interfaccia con pacchetti Zucchetti.</p>
+            <p class="timeline-desc lang-en">Java application development for HR, attendance and payroll management,
+              interfacing with Zucchetti packages.</p>
+            <div class="timeline-techs">
+              <span class="tech-tag">Java</span>
+              <span class="tech-tag">AS/400</span>
+              <span class="tech-tag">DB2/400</span>
+              <span class="tech-tag">Oracle 8i</span>
+              <span class="tech-tag">Tomcat</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 13. Freelance — hidden -->
+        <div class="timeline-item hidden-item" style="display:none;">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">
+              <span class="lang-it">Mag 1997 — Ago 1998</span>
+              <span class="lang-en">May 1997 — Aug 1998</span>
+            </span>
+            <h3 class="timeline-role">C/C++, Pascal Software Developer</h3>
+            <h4 class="timeline-company">Freelance — Genova</h4>
+            <p class="timeline-desc lang-it">Consulenza software e sviluppo web per diversi siti internet. Sviluppo
+              script e pagine HTML.</p>
+            <p class="timeline-desc lang-en">Software consultancy and web development for various internet sites. Script
+              and HTML page development.</p>
+            <div class="timeline-techs">
+              <span class="tech-tag">C++</span>
+              <span class="tech-tag">Turbo Pascal</span>
+              <span class="tech-tag">JavaScript</span>
+              <span class="tech-tag">Java Applet</span>
+              <span class="tech-tag">HTML</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 14. Comune — hidden -->
+        <div class="timeline-item hidden-item" style="display:none;">
+          <div class="timeline-dot"></div>
+          <div class="timeline-card">
+            <span class="timeline-date">
+              <span class="lang-it">Mag 1995 — Mag 1996</span>
+              <span class="lang-en">May 1995 — May 1996</span>
+            </span>
+            <h3 class="timeline-role">IT Specialist &amp; Education</h3>
+            <h4 class="timeline-company">Comune Di Mignanego — Genova</h4>
+            <p class="timeline-desc lang-it">Servizio civile presso l'Ufficio Servizi Sociali. Miglioramento e
+              adattamento dei servizi IT alle esigenze amministrative.</p>
+            <p class="timeline-desc lang-en">Civil service at Social Service Office. Improving and adapting IT services
+              to administration needs.</p>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="timeline-toggle">
+        <button class="btn btn-outline" id="timeline-toggle">
+          <span class="lang-it">▼ Mostra tutta la carriera</span>
+          <span class="lang-en">▼ Show full career</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== SKILLS ====== -->
+  <section class="section" id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">
+          <span class="lang-it">Competenze</span>
+          <span class="lang-en">Skills</span>
+        </span>
+        <h2 class="section-title">
+          <span class="lang-it">Stack Tecnologico</span>
+          <span class="lang-en">Technology Stack</span>
+        </h2>
+        <hr class="section-divider">
+      </div>
+
+      <div class="skills-categories reveal">
+
+        <div class="skill-category">
+          <h3 class="skill-category-title"><span class="icon">💻</span>
+            <span class="lang-it">Linguaggi di Programmazione</span>
+            <span class="lang-en">Programming Languages</span>
+          </h3>
+          <div class="skill-chips">
+            <span class="skill-chip highlight">Java</span>
+            <span class="skill-chip highlight">Python</span>
+            <span class="skill-chip">C</span>
+            <span class="skill-chip">C++</span>
+            <span class="skill-chip">C#</span>
+            <span class="skill-chip">Clojure</span>
+            <span class="skill-chip">R</span>
+            <span class="skill-chip">PHP</span>
+            <span class="skill-chip">Pascal</span>
+            <span class="skill-chip">VBScript</span>
+            <span class="skill-chip">Visual Basic</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-category-title"><span class="icon">☕</span>
+            <span class="lang-it">Ecosistema Java</span>
+            <span class="lang-en">Java Ecosystem</span>
+          </h3>
+          <div class="skill-chips">
+            <span class="skill-chip highlight">Java EE</span>
+            <span class="skill-chip highlight">Spring</span>
+            <span class="skill-chip">JSF</span>
+            <span class="skill-chip">EJB</span>
+            <span class="skill-chip">JPA</span>
+            <span class="skill-chip">Hibernate</span>
+            <span class="skill-chip">JMS</span>
+            <span class="skill-chip">iText</span>
+            <span class="skill-chip">Jasper Reports</span>
+            <span class="skill-chip">JUnit</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-category-title"><span class="icon">🗄️</span> Database</h3>
+          <div class="skill-chips">
+            <span class="skill-chip highlight">MySQL</span>
+            <span class="skill-chip highlight">Oracle</span>
+            <span class="skill-chip">DB2</span>
+            <span class="skill-chip">SQL Server</span>
+            <span class="skill-chip">IBM iSeries</span>
+            <span class="skill-chip">Microsoft Access</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-category-title"><span class="icon">🏗️</span>
+            <span class="lang-it">Architettura &amp; Metodologie</span>
+            <span class="lang-en">Architecture &amp; Methodologies</span>
+          </h3>
+          <div class="skill-chips">
+            <span class="skill-chip highlight">Software Architecture</span>
+            <span class="skill-chip highlight">Domain Driven Design</span>
+            <span class="skill-chip">UML</span>
+            <span class="skill-chip">Functional Programming</span>
+            <span class="skill-chip">Web Services</span>
+            <span class="skill-chip">Microservices</span>
+            <span class="skill-chip">Software Project Management</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-category-title"><span class="icon">⚙️</span> DevOps &amp; Infrastruttura</h3>
+          <div class="skill-chips">
+            <span class="skill-chip highlight">Docker</span>
+            <span class="skill-chip">DevOps</span>
+            <span class="skill-chip">Linux</span>
+            <span class="skill-chip">Tomcat</span>
+            <span class="skill-chip">Glassfish</span>
+            <span class="skill-chip">WebSphere</span>
+            <span class="skill-chip">Apache</span>
+            <span class="skill-chip">Google App Engine</span>
+          </div>
+        </div>
+
+        <div class="skill-category">
+          <h3 class="skill-category-title"><span class="icon">🚀</span>
+            <span class="lang-it">Tecnologie Emergenti</span>
+            <span class="lang-en">Emerging Technologies</span>
+          </h3>
+          <div class="skill-chips">
+            <span class="skill-chip">Big Data</span>
+            <span class="skill-chip">Data Science</span>
+            <span class="skill-chip">Blockchain</span>
+            <span class="skill-chip">AI</span>
+            <span class="skill-chip">Cryptocurrencies</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== CERTIFICATIONS ====== -->
+  <section class="section" id="certifications">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">
+          <span class="lang-it">Formazione Continua</span>
+          <span class="lang-en">Continuous Learning</span>
+        </span>
+        <h2 class="section-title">
+          <span class="lang-it">Certificazioni</span>
+          <span class="lang-en">Certifications</span>
+        </h2>
+        <hr class="section-divider">
+      </div>
+
+      <div class="certs-grid reveal">
+        <!-- Visible certs (8) -->
+        <div class="cert-card">
+          <div class="cert-name"><a href="https://www.udemy.com/certificate/UC-72ed5835-8f1e-4695-9a6e-f677f8c02c16/"
+              target="_blank" rel="noopener">Domain Driven Design &amp; Microservices for Architects</a></div>
+          <div class="cert-meta"><span class="cert-authority">Udemy</span><span class="cert-date">Feb 2023</span></div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-name"><a href="https://www.udemy.com/certificate/UC-a6d7daf8-dc31-4937-a4b7-f97b3e00b61d/"
+              target="_blank" rel="noopener">SOLID Principles &amp; Design Patterns for Java Programmers</a></div>
+          <div class="cert-meta"><span class="cert-authority">Udemy</span><span class="cert-date">Jan 2023</span></div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-name"><a href="https://www.udemy.com/certificate/UC-3146014f-2900-4690-adbf-931de4ed8a95"
+              target="_blank" rel="noopener">Software Architecture &amp; Technology of Large-Scale Systems</a></div>
+          <div class="cert-meta"><span class="cert-authority">Udemy</span><span class="cert-date">Nov 2022</span></div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-name"><a href="https://www.udemy.com/certificate/UC-d9a8ac4c-adfc-45e4-9691-2028bdf33ecb/"
+              target="_blank" rel="noopener">Software Architecture Case Studies</a></div>
+          <div class="cert-meta"><span class="cert-authority">Udemy</span><span class="cert-date">Nov 2022</span></div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-name"><a href="https://www.udemy.com/certificate/UC-bda1f0a1-3891-4ca3-8d1c-b89794ecbeef/"
+              target="_blank" rel="noopener">AI Prompt Engineering</a></div>
+          <div class="cert-meta"><span class="cert-authority">Udemy</span><span class="cert-date">May 2024</span></div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-name"><a href="https://www.udemy.com/certificate/UC-af787ef4-be8a-4dae-b78d-7934a801960e/"
+              target="_blank" rel="noopener">A Comprehensive Guide to JVM Languages: 2 in 1</a></div>
+          <div class="cert-meta"><span class="cert-authority">Udemy</span><span class="cert-date">Apr 2024</span></div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-name"><a href="https://www.udemy.com/certificate/UC-4878377e-f902-45f4-b710-ffb6392070f3/"
+              target="_blank" rel="noopener">Docker e Kubernetes da zero a cento</a></div>
+          <div class="cert-meta"><span class="cert-authority">Udemy</span><span class="cert-date">May 2024</span></div>
+        </div>
+        <div class="cert-card">
+          <div class="cert-name">LANGUAGECERT Achiever B1 — ESOL International</div>
+          <div class="cert-meta"><span class="cert-authority">LanguageCert</span><span class="cert-date">Sep 2025</span>
+          </div>
+        </div>
+
+        <!-- Hidden certs -->
+        <div class="cert-card hidden-cert">
+          <div class="cert-name"><a href="https://ude.my/UC-719df110-a354-4e3d-b1aa-5716f6ee8e23" target="_blank"
+              rel="noopener">Becoming a Production MySQL DBA</a></div>
+          <div class="cert-meta"><span class="cert-authority">Udemy</span><span class="cert-date">Jun 2023</span></div>
+        </div>
+        <div class="cert-card hidden-cert">
+          <div class="cert-name"><a href="https://www.udemy.com/certificate/UC-70647f3e-d9c9-48d6-bdc1-784cc539b593/"
+              target="_blank" rel="noopener">The English of Insurance</a></div>
+          <div class="cert-meta"><span class="cert-authority">Udemy</span><span class="cert-date">Aug 2023</span></div>
+        </div>
+        <div class="cert-card hidden-cert">
+          <div class="cert-name"><a href="https://www.udemy.com/certificate/UC-f7b1f3dd-65d9-4343-8c76-bef6f1b7876d/"
+              target="_blank" rel="noopener">Java Application Performance Tuning and Memory Management</a></div>
+          <div class="cert-meta"><span class="cert-authority">Udemy</span><span class="cert-date">Jan 2023</span></div>
+        </div>
+        <div class="cert-card hidden-cert">
+          <div class="cert-name"><a href="https://www.udemy.com/certificate/UC-ae21ff2b-229f-4ec3-90c2-a06d41e41a63/"
+              target="_blank" rel="noopener">Java Microservices con Spring Boot, Spring Cloud e AWS</a></div>
+          <div class="cert-meta"><span class="cert-authority">Udemy</span><span class="cert-date">Dec 2020</span></div>
+        </div>
+        <div class="cert-card hidden-cert">
+          <div class="cert-name"><a href="https://www.coursera.org/account/accomplishments/records/MHMXL5RUUVGA"
+              target="_blank" rel="noopener">Continuous Delivery &amp; DevOps</a></div>
+          <div class="cert-meta"><span class="cert-authority">University of Virginia</span><span class="cert-date">Apr
+              2019</span></div>
+        </div>
+        <div class="cert-card hidden-cert">
+          <div class="cert-name"><a href="https://www.coursera.org/account/accomplishments/records/L5QCLCRFZGWN"
+              target="_blank" rel="noopener">Cybersecurity and Its Ten Domains</a></div>
+          <div class="cert-meta"><span class="cert-authority">Univ. System of Georgia</span><span class="cert-date">Dec
+              2019</span></div>
+        </div>
+        <div class="cert-card hidden-cert">
+          <div class="cert-name"><a href="https://www.coursera.org/account/accomplishments/records/68TRS6HHU3QR"
+              target="_blank" rel="noopener">Data Science Math Skills</a></div>
+          <div class="cert-meta"><span class="cert-authority">Duke University</span><span class="cert-date">Apr
+              2018</span></div>
+        </div>
+        <div class="cert-card hidden-cert">
+          <div class="cert-name"><a href="https://www.coursera.org/account/accomplishments/records/8RY35AGNBBWA"
+              target="_blank" rel="noopener">Introduction to TCP/IP</a></div>
+          <div class="cert-meta"><span class="cert-authority">Yonsei University</span><span class="cert-date">Jan
+              2018</span></div>
+        </div>
+        <div class="cert-card hidden-cert">
+          <div class="cert-name"><a href="https://www.udemy.com/certificate/UC-WTK0FFJN/" target="_blank"
+              rel="noopener">Software Testing By Innovation Techniques</a></div>
+          <div class="cert-meta"><span class="cert-authority">Udemy</span><span class="cert-date">Jan 2018</span></div>
+        </div>
+        <div class="cert-card hidden-cert">
+          <div class="cert-name"><a href="https://www.udemy.com/certificate/UC-TE4ZQFOZ/" target="_blank"
+              rel="noopener">Java Multithreading</a></div>
+          <div class="cert-meta"><span class="cert-authority">Udemy</span><span class="cert-date">Dec 2017</span></div>
+        </div>
+        <div class="cert-card hidden-cert">
+          <div class="cert-name"><a href="https://www.udemy.com/certificate/UC-XFKPD44Z/" target="_blank"
+              rel="noopener">Java 8 Functional Programming: Lambda Expressions Quickly</a></div>
+          <div class="cert-meta"><span class="cert-authority">Udemy</span><span class="cert-date">Dec 2017</span></div>
+        </div>
+        <div class="cert-card hidden-cert">
+          <div class="cert-name"><a href="https://www.udemy.com/certificate/UC-X9D1OE3A/" target="_blank"
+              rel="noopener">Blockchain Theory 101</a></div>
+          <div class="cert-meta"><span class="cert-authority">Udemy</span><span class="cert-date">Dec 2017</span></div>
+        </div>
+        <div class="cert-card hidden-cert">
+          <div class="cert-name"><a href="https://www.udemy.com/certificate/UC-PRVBKWEP/" target="_blank"
+              rel="noopener">Introduction to Cryptocurrencies and Blockchain</a></div>
+          <div class="cert-meta"><span class="cert-authority">Udemy</span><span class="cert-date">Dec 2017</span></div>
+        </div>
+        <div class="cert-card hidden-cert">
+          <div class="cert-name"><a href="https://www.coursera.org/account/accomplishments/records/HYMKLALFGZML"
+              target="_blank" rel="noopener">Python Programming: A Concise Introduction</a></div>
+          <div class="cert-meta"><span class="cert-authority">Wesleyan University</span><span class="cert-date">Oct
+              2016</span></div>
+        </div>
+        <div class="cert-card hidden-cert">
+          <div class="cert-name"><a href="https://www.coursera.org/account/accomplishments/records/ABDF8QZGRQWE"
+              target="_blank" rel="noopener">R Programming</a></div>
+          <div class="cert-meta"><span class="cert-authority">Johns Hopkins Univ.</span><span class="cert-date">Mar
+              2016</span></div>
+        </div>
+        <div class="cert-card hidden-cert">
+          <div class="cert-name"><a href="https://www.coursera.org/account/accomplishments/records/NG3B75Q3F7YE"
+              target="_blank" rel="noopener">The Data Scientist's Toolbox</a></div>
+          <div class="cert-meta"><span class="cert-authority">Johns Hopkins Univ.</span><span class="cert-date">Feb
+              2016</span></div>
+        </div>
+        <div class="cert-card hidden-cert">
+          <div class="cert-name"><a href="https://www.coursera.org/account/accomplishments/records/3AJE4934J3WE"
+              target="_blank" rel="noopener">Introduction to Big Data (2015)</a></div>
+          <div class="cert-meta"><span class="cert-authority">UC San Diego</span><span class="cert-date">Jan 2016</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-toggle" style="margin-top:1.5rem;">
+        <button class="btn btn-outline" id="certs-toggle">
+          <span class="lang-it">▼ Mostra tutte le certificazioni</span>
+          <span class="lang-en">▼ Show all certifications</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== TALKS & PUBLICATIONS ====== -->
+  <section class="section" id="talks">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">
+          <span class="lang-it">Condivisione della conoscenza</span>
+          <span class="lang-en">Knowledge sharing</span>
+        </span>
+        <h2 class="section-title">Talks &amp;
+          <span class="lang-it">Pubblicazioni</span>
+          <span class="lang-en">Publications</span>
+        </h2>
+        <hr class="section-divider">
+      </div>
+
+      <div class="talks-grid reveal">
+
+        <div class="talk-card">
+          <span class="talk-type seminar">Talk</span>
+          <h3 class="talk-title">Converting Excel Applications to Pseudocode and Clojure</h3>
+          <p class="talk-desc lang-it">Talk al Java User Group Genova su reverse engineering, tecniche manuali e
+            automazione nella conversione di applicazioni Excel.</p>
+          <p class="talk-desc lang-en">Talk at the Java User Group Genoa on reverse engineering, manual techniques and
+            automation in Excel application conversion.</p>
+          <div class="talk-footer">
+            <span class="talk-venue">JUG Genova</span>
+            <span class="talk-date-tag">Jan 2024</span>
+          </div>
+        </div>
+
+        <div class="talk-card">
+          <span class="talk-type seminar">Talk</span>
+          <h3 class="talk-title">A Comprehensive Review of E-R Models Across Industries</h3>
+          <p class="talk-desc lang-it">Presentazione al JUG Genova sui modelli E-R industriali, basata sui volumi
+            &ldquo;The Data Model Resource Book&rdquo; di Len Silverston.</p>
+          <p class="talk-desc lang-en">Presentation at JUG Genoa on industrial E-R models, based on Len Silverston's
+            "The Data Model Resource Book" volumes.</p>
+          <div class="talk-footer">
+            <span class="talk-venue">JUG Genova</span>
+            <span class="talk-date-tag">Jan 2024</span>
+          </div>
+        </div>
+
+        <div class="talk-card">
+          <span class="talk-type seminar">Talk</span>
+          <h3 class="talk-title">Google App Engine Overview</h3>
+          <p class="talk-desc lang-it">Presentazione al Google Developers Group Genova sul Google App Engine.</p>
+          <p class="talk-desc lang-en">Presentation at Google Developers Group Genova on Google App Engine.</p>
+          <div class="talk-footer">
+            <span class="talk-venue">GDG Genova</span>
+            <span class="talk-date-tag">Oct 2013</span>
+          </div>
+        </div>
+
+        <div class="talk-card">
+          <span class="talk-type seminar">
+            <span class="lang-it">Seminario</span>
+            <span class="lang-en">Seminar</span>
+          </span>
+          <h3 class="talk-title">Java PDF generation with iText</h3>
+          <p class="talk-desc lang-it">Seminario sulla generazione di PDF in Java con iText, presentato al DISI
+            dell'Università di Genova, organizzato dal JUG Genova.</p>
+          <p class="talk-desc lang-en">Seminar on Java PDF generation with iText, presented at the DISI of the
+            University of Genoa, organized by JUG Genova.</p>
+          <div class="talk-footer">
+            <span class="talk-venue">
+              <span class="lang-it">Università di Genova</span>
+              <span class="lang-en">University of Genoa</span>
+            </span>
+            <span class="talk-date-tag">Jan 2009</span>
+          </div>
+        </div>
+
+        <div class="talk-card">
+          <span class="talk-type seminar">
+            <span class="lang-it">Seminario</span>
+            <span class="lang-en">Seminar</span>
+          </span>
+          <h3 class="talk-title">Java Base — package I/O e NET</h3>
+          <p class="talk-desc lang-it">Seminario presentato alla conferenza Webbit a Padova, organizzato dalla Java
+            Italian Association.</p>
+          <p class="talk-desc lang-en">Seminar presented at the Webbit Conference in Padova, organized by the Java
+            Italian Association.</p>
+          <div class="talk-footer">
+            <span class="talk-venue">Webbit — Padova</span>
+            <span class="talk-date-tag">May 2003</span>
+          </div>
+        </div>
+
+        <div class="talk-card">
+          <span class="talk-type publication">
+            <span class="lang-it">Pubblicazione</span>
+            <span class="lang-en">Publication</span>
+          </span>
+          <h3 class="talk-title">Un package per il debugging in Java</h3>
+          <p class="talk-desc lang-it">Articolo co-autore pubblicato su Mokabyte, nella categoria Java Advanced.</p>
+          <p class="talk-desc lang-en">Co-authored article published on Mokabyte, in the Java Advanced category.</p>
+          <div class="talk-footer">
+            <span class="talk-venue"><a href="http://www.mokabyte.it/mokaold/1999/12/debugjava.htm" target="_blank"
+                rel="noopener">Mokabyte</a></span>
+            <span class="talk-date-tag">Dec 1999</span>
+          </div>
+        </div>
+
+        <div class="talk-card">
+          <span class="talk-type publication">
+            <span class="lang-it">Pubblicazione</span>
+            <span class="lang-en">Publication</span>
+          </span>
+          <h3 class="talk-title">Java e il protocollo UDP</h3>
+          <p class="talk-desc lang-it">Articolo co-autore pubblicato su Mokabyte, nella categoria Java Advanced.</p>
+          <p class="talk-desc lang-en">Co-authored article published on Mokabyte, in the Java Advanced category.</p>
+          <div class="talk-footer">
+            <span class="talk-venue"><a href="http://www.mokabyte.it/mokaold/2000/03/udp.htm" target="_blank"
+                rel="noopener">Mokabyte</a></span>
+            <span class="talk-date-tag">Mar 2000</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== EDUCATION & COMMUNITY ====== -->
+  <section class="section" id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <span class="section-label">
+          <span class="lang-it">Background</span>
+          <span class="lang-en">Background</span>
+        </span>
+        <h2 class="section-title">
+          <span class="lang-it">Formazione &amp; Community</span>
+          <span class="lang-en">Education &amp; Community</span>
+        </h2>
+        <hr class="section-divider">
+      </div>
+
+      <div class="edu-community-grid reveal">
+
+        <div>
+          <div class="edu-card">
+            <h3 class="edu-school">Istituto Tecnico Don Bosco — Genova</h3>
+            <p class="edu-degree">
+              <span class="lang-it">Diploma di Perito Industriale Capotecnico per l'Elettronica</span>
+              <span class="lang-en">Industrial Electronics Technical Diploma</span>
+            </p>
+            <span class="edu-date">1988 — 1991</span>
+          </div>
+
+          <div class="edu-card" style="margin-top:1.25rem;">
+            <h3 class="edu-school" style="font-size:0.95rem;">
+              <span class="lang-it">Corsi Rilevanti</span>
+              <span class="lang-en">Relevant Courses</span>
+            </h3>
+            <div style="margin-top:0.75rem;">
+              <div class="org-item">
+                <div class="org-name">IBM PL971 WebSphere</div>
+              </div>
+              <div class="org-item">
+                <div class="org-name">IBM ACG for Lotus Notes</div>
+              </div>
+              <div class="org-item">
+                <div class="org-name">QlikView — Analyzer/Professional &amp; Developer</div>
+              </div>
+              <div class="org-item">
+                <div class="org-name" style="font-size:0.88rem;">
+                  <span class="lang-it">Programmazione per Calcolatori Elettronici — Livelli Base, Intermedio,
+                    Avanzato</span>
+                  <span class="lang-en">Computer Programming — Basic, Intermediate &amp; Advanced Levels</span>
+                </div>
+                <span class="org-since">1986 — 1989</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="org-card">
+            <h3 class="community-title">
+              <span class="lang-it">Community &amp; Organizzazioni</span>
+              <span class="lang-en">Community &amp; Organizations</span>
+            </h3>
+            <div class="org-item">
+              <div class="org-name">Java User Group Genova</div>
+              <div class="org-role">CoFounder</div>
+              <span class="org-since">
+                <span class="lang-it">Dal 2005</span>
+                <span class="lang-en">Since 2005</span>
+              </span>
+            </div>
+            <div class="org-item">
+              <div class="org-name">Google Developers Group (GDG) Genova</div>
+              <div class="org-role">Member</div>
+              <span class="org-since">
+                <span class="lang-it">Dal 2013</span>
+                <span class="lang-en">Since 2013</span>
+              </span>
+            </div>
+            <div class="org-item">
+              <div class="org-name">A.I.C.A.</div>
+              <div class="org-role">Member</div>
+              <span class="org-since">
+                <span class="lang-it">Dal 2012</span>
+                <span class="lang-en">Since 2012</span>
+              </span>
+            </div>
+          </div>
+
+          <div class="edu-card" style="margin-top:1.25rem;">
+            <h3 class="edu-school" style="font-size:0.95rem;">
+              <span class="lang-it">Lingue</span>
+              <span class="lang-en">Languages</span>
+            </h3>
+            <div style="margin-top:0.75rem;">
+              <div class="org-item">
+                <div class="org-name">
+                  <span class="lang-it">Italiano</span>
+                  <span class="lang-en">Italian</span>
+                </div>
+                <div class="org-role">
+                  <span class="lang-it">Madrelingua</span>
+                  <span class="lang-en">Native</span>
+                </div>
+              </div>
+              <div class="org-item">
+                <div class="org-name">
+                  <span class="lang-it">Inglese</span>
+                  <span class="lang-en">English</span>
+                </div>
+                <div class="org-role">
+                  <span class="lang-it">Competenza professionale</span>
+                  <span class="lang-en">Professional working proficiency</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ====== FOOTER ====== -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-socials">
+        <!-- LinkedIn -->
+        <a href="https://www.linkedin.com/in/massimocaliman" target="_blank" rel="noopener" class="social-link"
+          aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 01-2.063-2.065 2.064 2.064 0 112.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
+          </svg>
+        </a>
+        <!-- GitHub -->
+        <a href="https://github.com/massimocaliman" target="_blank" rel="noopener" class="social-link"
+          aria-label="GitHub">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12" />
+          </svg>
+        </a>
+        <!-- X / Twitter -->
+        <a href="https://x.com/massimocaliman" target="_blank" rel="noopener" class="social-link" aria-label="X">
+          <svg viewBox="0 0 24 24">
+            <path
+              d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+          </svg>
+        </a>
+        <!-- Blog -->
+        <a href="https://trueprogramming.com" target="_blank" rel="noopener" class="social-link" aria-label="Blog">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M12 20h9" />
+            <path d="M16.5 3.5a2.121 2.121 0 013 3L7 19l-4 1 1-4L16.5 3.5z" />
+          </svg>
+        </a>
+        <!-- JUG -->
+        <a href="https://juggenova.it" target="_blank" rel="noopener" class="social-link" aria-label="JUG Genova">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round">
+            <path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2" />
+            <circle cx="9" cy="7" r="4" />
+            <path d="M23 21v-2a4 4 0 00-3-3.87" />
+            <path d="M16 3.13a4 4 0 010 7.75" />
+          </svg>
+        </a>
+      </div>
+      <p class="footer-text">
+        <span class="lang-it">Progettato e sviluppato con <span class="heart">♥</span> da Massimo Caliman</span>
+        <span class="lang-en">Designed and built with <span class="heart">♥</span> by Massimo Caliman</span>
+        <br>&copy; 2024 — <span id="current-year"></span>
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+  <script>document.getElementById('current-year').textContent = new Date().getFullYear();</script>
+</body>
+
+</html>
