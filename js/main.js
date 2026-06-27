@@ -48,8 +48,8 @@ function initTypingEffect() {
   if (!el) return;
 
   const strings = {
-    it: ['Software Architect', 'CTO', 'Java Expert', 'Speaker', 'CoFounder JUG Genova'],
-    en: ['Software Architect', 'CTO', 'Java Expert', 'Speaker', 'JUG Genova CoFounder']
+    it: ['Software Architect', 'Chief Technology Officer', 'Java Expert', 'Speaker', 'CoFounder Java User Group Genova'],
+    en: ['Software Architect', 'Chief Technology Officer', 'Java Expert', 'Speaker', 'CoFounder Java User Group Genova']
   };
 
   let currentLang = document.documentElement.getAttribute('data-lang') || 'it';
